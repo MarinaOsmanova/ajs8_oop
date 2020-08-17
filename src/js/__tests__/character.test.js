@@ -1,11 +1,11 @@
 import Character from '../character';
 
 test('short name should throw an exception', () => {
-  expect(() => { new Character('I', 'Bowman'); }).toThrow('Слишком короткое имя');
+  expect(() => new Character('I', 'Bowman')).toThrow('Слишком короткое имя');
 });
 
 test('long name should throw an exception', () => {
-  expect(() => { new Character('MyNameIsVeryLong', 'Bowman'); }).toThrow('Слишком длинное имя');
+  expect(() => new Character('MyNameIsVeryLong', 'Bowman')).toThrow('Слишком длинное имя');
 });
 
 test('invalid type must throw an exception', () => {
